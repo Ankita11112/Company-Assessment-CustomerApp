@@ -13,6 +13,6 @@ const database = async() => {
         console.error("MongoDB Connection Failed", error);
         process.exit(1);
       }
-};
+}
 
-export default database;
+module.exports = database;

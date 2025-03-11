@@ -3,7 +3,7 @@ const cors = require("cors");
 const customerRoutes = require("./routes/customerRoutes");
 const membershipRoutes = require("./routes/membershipRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
-const { default: database } = require("./config/database");
+const database = require("./config/database");
 const dotenv = require('dotenv');
 dotenv.config();
 
