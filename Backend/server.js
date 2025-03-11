@@ -4,7 +4,8 @@ const customerRoutes = require("./routes/customerRoutes");
 const membershipRoutes = require("./routes/membershipRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
 const { default: database } = require("./config/database");
-require("dotenv").config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Connect to MongoDB
 database();
