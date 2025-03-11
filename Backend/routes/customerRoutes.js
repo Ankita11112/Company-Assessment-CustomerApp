@@ -3,7 +3,7 @@ const { getMemberships, createMembership } = require("../controllers/customerCon
 
 const router = express.Router();
 
-router.get("/", getMemberships);
-router.post("/", createMembership);
+router.get("/getmemberships", getMemberships);
+router.post("/createmembership", createMembership);
 
 module.exports = router;
